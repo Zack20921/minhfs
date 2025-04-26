@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;300;500;600&family=Lato:wght@100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400&family=Open+Sans:wght@300&family=Overpass&family=Poppins:wght@200&family=Raleway:wght@300&family=Ramabhadra&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;300;500;600&family=Lato:wght@100&family=Montserrat:ital,wght@0,200;0,300;1,100;1,200&family=Open+Sans:wght@300&family=Overpass&family=Poppins:wght@200&family=Raleway:wght@300&family=Ramabhadra&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top:50px;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background:rgba(186, 186, 186, 0.7);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(142, 142, 142);
+    border-radius: 200rem;
+
+}
+.oc{
+    display: none;
+}
+
+.s1{
+    background-color: #d8cdb8;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px 5px 100px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+}
+.s1 .logo{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.s1 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s1 ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+.s1 ul li a{
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+.s1 .btn{
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.s1 .btn.close-btn{
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.s1 input{
+    display: none;
+}
+.s1 label{
+    display: none;
+}
+.s1 ul li a:hover,
+.s1 ul li #b1{
+    background:#F8F4E9;
+}
+
+#open-btn:checked ~ #s3,
+#open-btn2:checked ~ #s4{
+    top: 55%;
+    transition-duration: 2s;
+}
+
+@media (max-width:765px){
+    .s1{
+        padding: 10px 50px;
+    }
+    .s1 ul{
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        background-color: #252526;
+        top:0;
+        left: -100%;
+        line-height: 50px;
+        padding: 50px 10px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+    .s1 ul li {
+        margin: 15px 10px;
+    }
+    .s1 ul li a{
+        padding:  0 20px;
+        font-weight: 700;
+        color: #fff;
+        display: block;
+        font-size: 20px;
+    }
+    .s1 .btn{
+        display: block;
+    }
+    #menu-btn:checked ~ ul{
+        left: 0%;
+      }
+}
+
+/*------section2-------*/
+.s2{
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 100%;
+
+}
+.container{
+    background-color: #fff;
+    padding: 80px 0 25px 0;
+    text-align: center;
+}
+ h1{
+    background-color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+.container a{
+    text-decoration: none;
+}
+
+.search{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search #search{
+    width:500px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #d8cdb8;
+}
+.s2 table {
+    background-color: #fff;
+    border-collapse: collapse;
+    border-top: 0px solid rgb(153, 153, 153); 
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.s2 tr{
+    border-right: 0px solid #fff;
+    border-left: 0px solid #fff;
+
+}
+
+.s2 #tr1:hover{
+    background-color: lightgrey;
+    border-right: 0px solid lightgrey;
+    border-left: 0px solid lightgrey;
+    
+}
+.s2 td {
+    padding: 10px 20px 10px 30px;  
+}
+
+.s2 table .tr2{
+    width: 150px !important;
+}
+
+.s2 table #tr1  form button {
+    border: 0px ;
+    font-size: 15px;
+    color: red;
+    background-color: transparent;
+}
+
+.s2 table #tr1  form a{
+    color: rgb(117, 82, 220);
+}
+
+.s2 table #tr1  form a:hover,
+.s2 table #tr1  form button:hover {
+   cursor: pointer;
+}
+

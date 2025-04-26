@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;300;500;600&family=Lato:wght@100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400&family=Open+Sans:wght@300&family=Overpass&family=Poppins:wght@200&family=Raleway:wght@300&family=Ramabhadra&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;300;500;600&family=Lato:wght@100&family=Montserrat:ital,wght@0,200;0,300;1,100;1,200&family=Open+Sans:wght@300&family=Overpass&family=Poppins:wght@200&family=Raleway:wght@300&family=Ramabhadra&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top:50px;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background:rgba(186, 186, 186, 0.7);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(142, 142, 142);
+    border-radius: 200rem;
+
+}
+
+.s2{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9,30,0.7)),url(images/n.jpg);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+
+
+}
+
+.container{
+    background-color: transparent;
+    padding: 80px 0 25px 0;
+
+}
+ h1{
+    margin: 40px 0 20px 0;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.s2 form a{
+    text-decoration: none;
+}
+.s2 form{
+    position: absolute;
+    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 30px ;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    text-align: center;
+    box-shadow: -5px 4px 10px rgb(179, 178, 178);
+    width: 800px;
+
+}
+.s2 table {
+    margin: auto;
+    width: 700px;
+    border: 0px;
+    border-collapse: collapse;
+}
+.s2 form table .container2{
+    margin: 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    margin-bottom: 15px;
+
+}
+
+.s2 form table .container2 select{
+    border-radius: 30px;
+    padding-left: 10px;
+    width: 275px;
+    height: 30px;
+}
+.s2 form table .ip1{
+    padding-left: 10px;
+    display: block;
+    margin: 0px  auto;
+    background: transparent;
+    height: 35px;
+    width: 90%;
+    border:none;
+    border-bottom: 1px solid rgb(132, 132, 132);
+    font-size: 16px;
+}
+
+.s2 form table .ip3{
+    padding-left: 10px;
+    display: block;
+    margin: 0px  auto;
+    background: transparent;
+    height: 35px;
+    width: 75%;
+    border:none;
+    border-bottom: 1px solid rgb(132, 132, 132);
+    font-size: 16px;
+}
+
+.s2 form  #ip2{
+    color:rgb(255, 255, 255);
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px 20px 40px 20px ;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.s2 form #ip2:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.s2 form #ip2:focus {
+    outline: none;
+}
+.s2 td {
+    padding: 15px 20px 15px 20px;  
+}
+.s2 table tr{
+    border: 0px solid #fff;
+
+}
+
+.s2 form table #ip2:hover{
+    cursor: pointer;
+    
+}
